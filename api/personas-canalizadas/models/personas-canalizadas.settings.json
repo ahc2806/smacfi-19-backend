@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "persons_canalized",
+  "info": {
+    "name": "Personas canalizadas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "persona": {
+      "model": "personas"
+    },
+    "observations": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "status": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

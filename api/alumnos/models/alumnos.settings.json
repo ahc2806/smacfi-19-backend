@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "Alumnos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "enrollment": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 12,
+      "minLength": 1
+    },
+    "degree": {
+      "type": "string",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 3,
+      "default": "TSU"
+    },
+    "educational_program": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 10
+    },
+    "area": {
+      "type": "string",
+      "required": true,
+      "minLength": 5,
+      "maxLength": 100
+    },
+    "quarter": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "max": 11,
+      "min": 1
+    },
+    "group": {
+      "type": "string",
+      "default": "A",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 1
+    },
+    "system": {
+      "type": "string",
+      "default": "ESC",
+      "minLength": 3,
+      "maxLength": 3,
+      "required": true
+    },
+    "persona": {
+      "unique": true,
+      "model": "personas"
+    }
+  }
+}

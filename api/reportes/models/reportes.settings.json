@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "name": "Reportes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "temperature": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "maquina": {
+      "model": "maquina"
+    },
+    "persona": {
+      "model": "personas"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diagnostics",
+  "info": {
+    "name": "Diagnósticos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "symptoms": {
+      "type": "text",
+      "default": "Ninguno",
+      "maxLength": 255
+    },
+    "temperature": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "diagnostic": {
+      "type": "text",
+      "default": "Ninguno",
+      "maxLength": 255
+    },
+    "weight": {
+      "type": "decimal",
+      "default": 0
+    },
+    "height": {
+      "type": "decimal",
+      "default": 0
+    },
+    "persona_canalizada": {
+      "model": "personas-canalizadas"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

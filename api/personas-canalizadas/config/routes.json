@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/personas-canalizadas",
+      "handler": "personas-canalizadas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/personas-canalizadas/count",
+      "handler": "personas-canalizadas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/personas-canalizadas/:id",
+      "handler": "personas-canalizadas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/personas-canalizadas",
+      "handler": "personas-canalizadas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/personas-canalizadas/:id",
+      "handler": "personas-canalizadas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/personas-canalizadas/:id",
+      "handler": "personas-canalizadas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

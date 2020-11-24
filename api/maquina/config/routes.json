@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/maquinas",
+      "handler": "maquina.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/maquinas/count",
+      "handler": "maquina.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/maquinas/:id",
+      "handler": "maquina.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/maquinas",
+      "handler": "maquina.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/maquinas/:id",
+      "handler": "maquina.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/maquinas/:id",
+      "handler": "maquina.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
