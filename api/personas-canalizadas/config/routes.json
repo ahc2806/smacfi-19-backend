@@ -25,14 +25,6 @@
       }
     },
     {
-      "method": "POST",
-      "path": "/personas-canalizadas",
-      "handler": "personas-canalizadas.create",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "PUT",
       "path": "/personas-canalizadas/:id",
       "handler": "personas-canalizadas.update",

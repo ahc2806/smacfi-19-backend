@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/diagnosticos/alumnos/:enrollment",
+      "handler": "diagnosticos.findEnrollment",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/diagnosticos",
       "handler": "diagnosticos.create",
