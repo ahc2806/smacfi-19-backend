@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/personas/barcode/:barcode",
+      "handler": "personas.findBarcode",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/personas",
       "handler": "personas.create",

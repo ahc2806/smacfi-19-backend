@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/alumnos/matricula/:enrollment",
+      "handler": "alumnos.findEnrollment",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/alumnos",
       "handler": "alumnos.create",

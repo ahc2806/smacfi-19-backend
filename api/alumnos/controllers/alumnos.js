@@ -1,8 +1,13 @@
 'use strict';
 
-/**
- * Read the documentation (https://strapi.io/documentation/v3.x/concepts/controllers.html#core-controllers)
- * to customize this controller
- */
+const { sanitizeEntity } = require('strapi-utils');
 
-module.exports = {};
+module.exports = {
+
+  async findEnrollment(ctx) {
+    const { enrollment } = ctx.params;
+
+    const entity = await strapi.services.alumnos.findOne({ enrollment });
+    return sanitizeEntity(entity, { model: strapi.models.alumnos });
+  }
+};
