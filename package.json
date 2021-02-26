@@ -2,7 +2,7 @@
   "name": "smacfi-19-backend",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "CMS para aplicación móvil y Front de Smacfi-19",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,20 +11,20 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "strapi": "3.3.3",
-    "strapi-admin": "3.3.3",
-    "strapi-utils": "3.3.3",
-    "strapi-plugin-content-type-builder": "3.3.3",
-    "strapi-plugin-content-manager": "3.3.3",
-    "strapi-plugin-users-permissions": "3.3.3",
-    "strapi-plugin-email": "3.3.3",
-    "strapi-plugin-upload": "3.3.3",
-    "strapi-connector-bookshelf": "3.3.3",
+    "strapi": "3.4.4",
+    "strapi-admin": "3.4.4",
+    "strapi-utils": "3.4.4",
+    "strapi-plugin-content-type-builder": "3.4.4",
+    "strapi-plugin-content-manager": "3.4.4",
+    "strapi-plugin-users-permissions": "3.4.4",
+    "strapi-plugin-email": "3.4.4",
+    "strapi-plugin-upload": "3.4.4",
+    "strapi-connector-bookshelf": "3.4.4",
     "knex": "<0.20.0",
     "mysql": "latest"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Alonso Hernandez"
   },
   "strapi": {
     "uuid": "38b8caab-3b4e-4c93-aa6f-49ade60b71d8"
