@@ -1,6 +1,5 @@
 {
-  "routes": [
-    {
+  "routes": [{
       "method": "GET",
       "path": "/personas-canalizadas",
       "handler": "personas-canalizadas.find",
@@ -28,6 +27,14 @@
       "method": "PUT",
       "path": "/personas-canalizadas/:id",
       "handler": "personas-canalizadas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/personas-canalizadas",
+      "handler": "personas-canalizadas.create",
       "config": {
         "policies": []
       }
