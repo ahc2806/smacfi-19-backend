@@ -15,8 +15,7 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "maxLength": 12,
-      "minLength": 1
+      "maxLength": 12
     },
     "degree": {
       "type": "string",
@@ -28,8 +27,7 @@
     "educational_program": {
       "type": "string",
       "required": true,
-      "maxLength": 100,
-      "minLength": 10
+      "maxLength": 100
     },
     "area": {
       "type": "string",
@@ -59,7 +57,6 @@
       "required": true
     },
     "persona": {
-      "unique": true,
       "model": "personas"
     }
   }
