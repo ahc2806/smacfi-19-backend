@@ -24,6 +24,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/personas-canalizadas/information",
+      "handler": "personas-canalizadas.findAll",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
       "path": "/personas-canalizadas/:id",
       "handler": "personas-canalizadas.update",
